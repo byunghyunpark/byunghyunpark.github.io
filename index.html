@@ -1,0 +1,18 @@
+---
+layout: default
+title: My Home Page
+---
+<div class="page">
+  <h1 class="page-title">최근 작성글</h1>
+  <hr>
+  {% for post in site.posts %}
+  <ul class="post-list">
+   <li>
+    <span><time class="published" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time></span>
+    <h2 class="post-link">
+      <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+    </h2>
+   </li>
+  </ul>
+{% endfor %}
+</div>
