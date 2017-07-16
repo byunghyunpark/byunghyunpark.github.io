@@ -1,9 +1,8 @@
 ---
-title: blog post test
-tags: test, djangoi
-published: true
-___
-
+layout: post
+title:  "Post Test"
+categories: jekyll update
+---
 # post test
 
 ## markdown test
