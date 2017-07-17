@@ -4,7 +4,7 @@ tagline: 'Technology Blog'
 # description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 description: 'I started my web development with the <strong>django framework</strong>. I want to post the development trial and error that I experienced.'
 baseurl: ""
-url: ""
+url: "https://openmind8735.com"
 logo: '/public/logo.png'
 
 # Site configurations
@@ -63,3 +63,14 @@ category_page: '/blog/categories/'
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
 disqus_short_name: 'openmind8735' # leave blank if you don't want disqus
+
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
