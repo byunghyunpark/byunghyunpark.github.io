@@ -9,7 +9,7 @@ tags: Django Celery
 
 ---
 
-Django 인스턴스가 오토스케일링 되어서 Celery broker를 별도 EC2 인스턴스로 분리하였습니다. 
+Django 인스턴스가 오토스케일링 되어서 Celery broker를 별도 EC2 인스턴스로 분리하였습니다.
 
 Celery broker는 일반적으로 RabbitMQ를 사용하여 세팅했습니다.
 
@@ -18,7 +18,7 @@ Celery broker는 일반적으로 RabbitMQ를 사용하여 세팅했습니다.
 
 AWS에서 EC2를 하나 생성합니다. 작은 서비스라 일단 저렴한 마이크로 사이즈로 생성합니다.
 
-인스턴스는 Quick Start에서 Ubuntu로 생성했습니다. 
+인스턴스는 Quick Start에서 Ubuntu로 생성했습니다.
 
 Step 6: Configure Security Group 단계에서 22, 5672, 15672, 25672 포트를 열어줍니다.
 
@@ -65,7 +65,7 @@ sudo rabbitmqctl delete_user guest
 sudo /etc/init.d/rabbitmq-server restart
 ```
 
-이제 리모트 유저(celery)는 user:password 정보로 서버에 엑세스 할 수 있습니다. 
+이제 리모트 유저(celery)는 user:password 정보로 서버에 엑세스 할 수 있습니다.
 
 
 ## RabbitMQ management plugin 활성화
