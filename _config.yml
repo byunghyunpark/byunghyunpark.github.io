@@ -2,7 +2,7 @@
 title: openmind8735
 tagline: 'Technology Blog'
 # description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
-description: 'I started my first development with django. I want to leave development records that I have struggled with.'
+description: 'I started my web development with the <strong>django framework</strong>. I want to post the development trial and error that I experienced.'
 baseurl: ""
 url: ""
 logo: '/public/logo.png'
@@ -10,6 +10,7 @@ logo: '/public/logo.png'
 # Site configurations
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
 markdown: kramdown
 kramdown:
   input: GFM
@@ -26,7 +27,7 @@ version: 1.0.0
 # About/contact
 author:
   name: byunghyunpark
-  description: A passionate <strong>web developer</strong>, learning to be a giant.
+  description: 'I started my web development with the <strong>django framework</strong>. I want to post the development trial and error that I experienced.'
   gravatar: f0767ce49c58acfeb2a4bb13d5eeddd0 # md5 hash of your email address
   contact:
     linkedin:  https://www.linkedin.com/in/병현-박-9a8337114
