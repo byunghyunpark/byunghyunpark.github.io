@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://openmind8735/sitemap.xml
+Sitemap: https://openmind8735.com/sitemap.xml
