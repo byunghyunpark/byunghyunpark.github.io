@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://songyunseop.github.io/sitemap.xml
+Sitemap: https://openmind8735/sitemap.xml
