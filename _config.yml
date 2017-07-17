@@ -1,7 +1,8 @@
 # Site Info
-title: openmind8735's blog
-tagline: 'A Jekyll theme based on Lanyon'
-description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+title: openmind8735
+tagline: 'Technology Blog'
+# description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+description: 'I started my first development with django. I want to leave development records that I have struggled with.'
 baseurl: ""
 url: ""
 logo: '/public/logo.png'
