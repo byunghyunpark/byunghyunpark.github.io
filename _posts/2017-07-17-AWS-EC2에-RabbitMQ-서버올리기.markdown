@@ -2,7 +2,7 @@
 layout: post
 comments: true
 categories: AWS Rabbitmq
-tags: Django Celery
+tags: Django Celery RabbitMQ AWS EC2
 ---
 
 # AWS EC2 인스턴스에 RabbitMQ 서버 올리기
