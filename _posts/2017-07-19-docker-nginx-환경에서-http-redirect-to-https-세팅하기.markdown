@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-categories: AWS Nginx docker
-tags: Django Nginx docker ECS AWS
+categories: AWS Nginx Docker
+tags: Django Nginx Docker ECS AWS
 ---
 
 # docker nginx 환경에서 http redirect to https 세팅하기

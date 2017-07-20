@@ -1,0 +1,105 @@
+---
+layout: post
+comments: true
+categories: Docker
+tags: Docker
+---
+
+# docker 치트시트
+---
+
+> 도커를 사용하는데 자주 사용하는 기본 명령어들입니다.
+
+<br>
+
+## docker image build
+
+- 기본 빌드
+
+	```
+	docker build . -t <이미지이름>
+	```
+
+- 빌드시 환경변수 전달
+
+	> aws 인증정보를 환경변수로 전달한 예 입니다.
+	
+	```
+	docker build . -t <이미지이름> --build-arg AWS_ACCESS_KEY_ID=<엑세스키> --build-arg AWS_SECRET_ACCESS_KEY=<시크릿키> --build-arg AWS_DEFAULT_REGION=<리즌>
+	```
+
+<br>
+
+
+## docker tag
+
+- docker tag 생성
+
+	```
+	docker tag <기존 이미지명:테그명> <적용 이미지명:테그명>
+	```
+
+- docker tag 삭제
+	
+	```ssh
+	$ docker rmi user/foobar:1dee6a0ffae858a796e53aaf88a676f9ccb33165
+	$ docker images
+	REPOSITORY   TAG                                        ID                  CREATED             SIZE
+	user/foobar  latest                                     c4480f1bd5a7        About an hour ago   12.29 kB (virtual 1.625 GB)
+	user/fizbiz  9c4f77f7388406f5ad3cfbc673e2f1bb27fe3d29   6b9184c7d178  
+	```
+
+<br>
+
+## docker run
+
+- 도커 실행
+
+	```
+	docker run --rm -it -p <외부 IP>:<컨테이너 IP> <도커 이미지명>
+	```
+	> 이제 localhost:<외부 IP>로 접속하면 웹페이지 접근이 가능합니다. 
+
+- 실행중인 컨테이너 ssh 접속
+
+	```
+	docker exec -it <컨테이너 아이디> /bin/bash
+	```
+
+<br>
+
+## docker list
+
+- 이미지 리스트 확인
+
+	```
+	docker images [OPTION]
+	```
+
+- 컨테이너 리스트 확인
+
+	```
+	docker ps [OPTION]
+	```
+
+<br>
+
+## docker delete
+
+- 테그 없는 이미지 삭제
+
+	```
+	docker rmi -f $(docker images --filter "dangling=true" -q)
+	```
+
+- 도커 이미지 전부 삭제
+
+	```
+	docker rmi -f $(docker images -q)
+	```
+
+- exit 상태의 모든 컨테이서 삭제
+
+	```
+	docker rm $(docker ps --filter 'status=exited' -a -q)
+	```
