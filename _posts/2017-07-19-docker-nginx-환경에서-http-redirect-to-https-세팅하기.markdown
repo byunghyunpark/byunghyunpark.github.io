@@ -56,7 +56,7 @@ EXPOSE      80  1443
 # AWS ECS + EC2 세팅
 마지막으로 도커의 Task definition 과 EC2 security group 설정을 해줍니다.
 
-1. EC2 security group inbound 규칙에 80, 443, 포트 추가합니다.
+1. ec2 security group inbound 규칙에 80, 443, 포트 추가합니다.
 2. 컨테이너 추가에 에 80:80, 1443:1443 포트를 매핑합니다.
 
 ---

@@ -1,13 +1,13 @@
 # Site info
 title: openmind8735
-tagline: 'Tech Blog'
+tagline: Tech Blog
 baseurl: ""
-logo: '/public/logo.png'
 
 # rss info
-name: 'openmind8735's Tech blog
-description: 'I started my web development with the <strong>django framework</strong>. I want to post the development trial and error that I experienced.'
-url: "https://openmind8735.com"
+name: openmind8735's Tech blog
+description: I started my web development with the <strong>django framework</strong>. I want to post the development trial and error that I experienced.
+url: https://openmind8735.com
+logo: /public/logo.png
 
 # Site configurations
 gems:
